@@ -1,0 +1,7 @@
+<div class="iconsContainer" *ngFor="let fighter of fighter_cast">
+	<div class="iconBorder" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)">
+		<div class="placeholder">
+			<p>{{fighter.name}}</p>
+		</div>
+	</div>
+</div>

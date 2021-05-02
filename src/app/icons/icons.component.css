@@ -1,0 +1,16 @@
+div.iconBorder
+{
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	margin: 10px;
+	cursor: pointer;
+}
+
+div.placeholder
+{
+	height: 80px;
+	width: 80px;
+	background-color: white;
+	margin: 10px;
+}
