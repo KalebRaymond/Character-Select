@@ -5,11 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppTaskbarComponent } from './app-taskbar/app-taskbar.component';
+import { FighterIconComponent } from './fighter-icon/fighter-icon.component';
+import { FighterPreviewComponent } from './fighter-preview/fighter-preview.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTaskbarComponent
+    AppTaskbarComponent,
+    FighterIconComponent,
+    FighterPreviewComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,
