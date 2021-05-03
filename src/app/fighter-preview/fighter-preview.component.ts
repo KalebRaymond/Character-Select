@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Fighter } from "../fighter";
 
 @Component({
   selector: 'app-fighter-preview',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fighter-preview.component.css']
 })
 export class FighterPreviewComponent implements OnInit {
-
+	@Input("cur_fighter") cur_fighter: Fighter;
+	
   constructor() { }
 
   ngOnInit(): void {

@@ -1,7 +1,6 @@
+<app-fighter-preview [cur_fighter]="selected_fighter"></app-fighter-preview>
+
 <div class="iconsContainer" *ngFor="let fighter of fighter_cast">
-	<div class="iconBorder" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)">
-		<div class="placeholder">
-			<p>{{fighter.name}}</p>
-		</div>
-	</div>
+	<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
 </div>
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Fighter } from '../fighter';
 
 @Component({
@@ -8,11 +8,7 @@ import { Fighter } from '../fighter';
 })
 export class FighterIconComponent implements OnInit {
 
-	fighter: Fighter = {
-		id: 0,
-		name: "Chun-Li",
-		image: "",
-	};
+	@Input("fighter") fighter: Fighter;
 	
   constructor() { }
 
