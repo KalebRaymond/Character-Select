@@ -9,10 +9,9 @@ import { Fighter } from '../fighter';
 export class FighterIconComponent implements OnInit {
 
 	@Input("fighter") fighter: Fighter;
-	
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+	constructor() { }
 
+	ngOnInit(): void {
+	}
 }
