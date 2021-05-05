@@ -8,6 +8,7 @@ import { AppTaskbarComponent } from './app-taskbar/app-taskbar.component';
 import { FighterIconComponent } from './fighter-icon/fighter-icon.component';
 import { FighterPreviewComponent } from './fighter-preview/fighter-preview.component';
 import { IconsComponent } from './icons/icons.component';
+import { SelectAreaComponent } from './select-area/select-area.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IconsComponent } from './icons/icons.component';
     AppTaskbarComponent,
     FighterIconComponent,
     FighterPreviewComponent,
-    IconsComponent
+    IconsComponent,
+    SelectAreaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,25 @@
-<app-fighter-preview [cur_fighter]="selected_fighter"></app-fighter-preview>
-
-<div class="iconsContainer" *ngFor="let fighter of fighter_cast">
-	<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
+<div class="iconsContainer">
+	<div class="row r1">
+		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:0:9">
+			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
+		</div>
+	</div>
+	<div class="row r2">
+		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:9:16">
+			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
+		</div>
+	</div>
+	<div class="row r3">
+		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:16:22">
+			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
+		</div>
+	</div>
+	<div class="row r4">
+		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:22">
+			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
+		</div>
+	</div>
 </div>
+
+<app-fighter-preview [cur_fighter]="selected_fighter"></app-fighter-preview>
 

@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FighterIconComponent } from "../fighter-icon/fighter-icon.component";
 import { Fighter } from "../fighter";
-import { FIGHTER_CAST } from "../fighter_cast";
 
 @Component({
   selector: 'app-icons',
@@ -10,8 +9,8 @@ import { FIGHTER_CAST } from "../fighter_cast";
 })
 export class IconsComponent implements OnInit {
 	
-	fighter_cast = FIGHTER_CAST;
-	selected_fighter = FIGHTER_CAST[0];
+	@Input("fighter_cast") fighter_cast: Fighter[];
+	@Input("selected_fighter") selected_fighter: Fighter;
 
 	constructor() { }
 

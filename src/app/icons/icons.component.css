@@ -1,1 +1,16 @@
-/**/
+div.iconsContainer
+{
+	display: inline-block;
+	background-color: red;
+	float: right;
+}
+
+div.iconWrapper
+{
+	float: right;
+}
+
+div.row
+{
+	display: flex;
+}

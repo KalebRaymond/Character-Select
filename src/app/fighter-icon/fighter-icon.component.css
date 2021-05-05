@@ -1,17 +1,10 @@
-div.iconBorder
-{
-	height: 78px;
-	width: 78px;
-	background-color: black;
-	margin: 10px;
-	cursor: pointer;
-}
-
 img
 {
-	display: inline-block;
 	height: 58px;
 	width: 58px;
 	background-color: white;
-	margin: 10px;
+	cursor: pointer;
+	border: 3px solid black;
+	margin-top: 3px;
+	margin-right: 3px;
 }
