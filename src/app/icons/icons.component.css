@@ -1,16 +1,25 @@
 div.iconsContainer
 {
 	display: inline-block;
-	background-color: red;
 	float: right;
 }
 
 div.iconWrapper
 {
-	float: right;
+	/*float: right;*/
 }
 
 div.row
 {
 	display: flex;
+}
+
+div.row.marvel
+{
+	flex-direction: row-reverse;
+}
+
+div.row.capcom
+{
+	flex-direction: row;
 }

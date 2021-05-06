@@ -1,25 +1,22 @@
-<div class="iconsContainer">
-	<div class="row r1">
+<div class="iconsContainer {{franchise}}">
+	<div class="row r1 {{franchise}}">
 		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:0:9">
 			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
 		</div>
 	</div>
-	<div class="row r2">
+	<div class="row r2 {{franchise}}">
 		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:9:16">
 			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
 		</div>
 	</div>
-	<div class="row r3">
+	<div class="row r3 {{franchise}}">
 		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:16:22">
 			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
 		</div>
 	</div>
-	<div class="row r4">
+	<div class="row r4 {{franchise}}">
 		<div class="iconWrapper" *ngFor="let fighter of fighter_cast | slice:22">
 			<app-fighter-icon [fighter]="fighter" (mouseenter)="onHover(fighter)" (click)="onClick(fighter)"></app-fighter-icon>
 		</div>
 	</div>
 </div>
-
-<app-fighter-preview [cur_fighter]="selected_fighter"></app-fighter-preview>
-

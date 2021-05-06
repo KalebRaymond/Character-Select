@@ -10,7 +10,11 @@ import { Fighter } from "../fighter";
 })
 export class SelectAreaComponent implements OnInit {
 	marvel_cast = MARVEL_CAST;
+	marvel = "marvel";
 	capcom_cast = CAPCOM_CAST;
+	capcom = "capcom";
+	
+	cpu_fighter = CAPCOM_CAST[18]; //Morrigan
 	
 	random_icon = {
 		id: -1,

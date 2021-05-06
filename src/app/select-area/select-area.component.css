@@ -1,1 +1,26 @@
-/**/
+div.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-image: linear-gradient(to right, red, red, blue, blue);
+}	
+
+div.preview
+{
+	position: absolute;
+	bottom: 5rem;
+}
+
+div.preview#left
+{
+	left: 0px;
+	margin-left: 2rem;
+}
+
+div.preview#right
+{
+	right: 0px;
+	margin-right: 2rem;
+}

@@ -10,6 +10,7 @@ import { Fighter } from "../fighter";
 export class IconsComponent implements OnInit {
 	
 	@Input("fighter_cast") fighter_cast: Fighter[];
+	@Input("franchise") franchise: string;
 	@Input("selected_fighter") selected_fighter: Fighter;
 
 	constructor() { }

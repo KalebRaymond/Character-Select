@@ -1,1 +1,8 @@
-/**/
+div.test
+{
+	height: 300px;
+	width: 150px;
+	background-color: green;
+	/*background-image: url("../../assets/idle/2.webp");*/
+	z-index: 5;
+}

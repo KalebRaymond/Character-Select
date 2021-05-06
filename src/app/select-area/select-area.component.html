@@ -1,5 +1,22 @@
-<app-icons [fighter_cast]="marvel_cast" [selected_fighter]="marvel_cast[0]"></app-icons>
+<div>
+	<div class="container">
+		<div class="marvelWrapper">
+			<app-icons [fighter_cast]="marvel_cast" [franchise]="marvel" [selected_fighter]="marvel_cast[0]"></app-icons>
+		</div>
+		<div class="randomWrapper">
+			<app-fighter-icon [fighter]="random_icon"></app-fighter-icon>
+		</div>
+		<div class="capcomWrapper">
+			<app-icons [fighter_cast]="capcom_cast" [franchise]="capcom" [selected_fighter]="capcom_cast[0]"></app-icons>
+		</div>
+	</div>
+	
+	<div class="preview" id="left">
+		<app-fighter-preview [cur_fighter]="cpu_fighter"></app-fighter-preview>
+	</div>
+	<div class="preview" id="right">
+		<app-fighter-preview [cur_fighter]="cpu_fighter"></app-fighter-preview>
+	</div>
 
-<app-fighter-icon [fighter]="random_icon"></app-fighter-icon>
+</div>
 
-<app-icons [fighter_cast]="capcom_cast" [selected_fighter]="capcom_cast[0]"></app-icons>
