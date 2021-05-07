@@ -1,8 +1,18 @@
-div.test
+img
 {
-	height: 300px;
-	width: 150px;
-	background-color: green;
-	/*background-image: url("../../assets/idle/2.webp");*/
-	z-index: 5;
+	border: 1px solid green;
+	image-rendering: crisp-edges;
+	transform-origin: bottom;
+}
+
+img#left
+{
+	-webkit-transform: scale(1.75, 1.75);
+	transform: scale(1.75, 1.75);
+}
+
+img#right
+{
+	-webkit-transform: scale(-1.75, 1.75);
+	transform: scale(-1.75, 1.75);
 }

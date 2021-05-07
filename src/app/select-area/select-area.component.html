@@ -1,22 +1,21 @@
 <div>
 	<div class="container">
 		<div class="marvelWrapper">
-			<app-icons [fighter_cast]="marvel_cast" [franchise]="marvel" [selected_fighter]="marvel_cast[0]"></app-icons>
+			<app-icons [fighter_cast]="marvel_cast" [franchise]="marvel" (selection_event)="changePlayerFighter($event)"></app-icons>
 		</div>
 		<div class="randomWrapper">
-			<app-fighter-icon [fighter]="random_icon"></app-fighter-icon>
+			<app-fighter-icon [fighter]="random_icon" (click)="setPlayerRandom()"></app-fighter-icon>
 		</div>
 		<div class="capcomWrapper">
-			<app-icons [fighter_cast]="capcom_cast" [franchise]="capcom" [selected_fighter]="capcom_cast[0]"></app-icons>
+			<app-icons [fighter_cast]="capcom_cast" [franchise]="capcom" (selection_event)="changePlayerFighter($event)"></app-icons>
 		</div>
 	</div>
 	
 	<div class="preview" id="left">
-		<app-fighter-preview [cur_fighter]="cpu_fighter"></app-fighter-preview>
+		<app-fighter-preview [cur_fighter]="player_fighter" side="left"></app-fighter-preview>
 	</div>
 	<div class="preview" id="right">
-		<app-fighter-preview [cur_fighter]="cpu_fighter"></app-fighter-preview>
-	</div>
-
+		<app-fighter-preview [cur_fighter]="cpu_fighter" side="right"></app-fighter-preview>
+	</div>	
 </div>
 

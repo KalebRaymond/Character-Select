@@ -1,1 +1,11 @@
-/* Application-wide Styles */
+div.taskbarWrapper
+{
+	width: auto;
+	height: auto;
+}
+
+div.selectWrapper
+{
+	width: auto;
+	height: auto;
+}

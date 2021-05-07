@@ -1,9 +1,10 @@
 <h1 class="title">{{title}}</h1>
 
-<!-- For some reason, the taskbar has be put first in this file or else it won't appear --->
-<!-- Might need to wrap these in divs to separate them -->
-<app-taskbar></app-taskbar>
-<app-select-area></app-select-area>
-
+<div class="taskbarWrapper">
+	<app-taskbar></app-taskbar>
+</div>
+<div class="selectWrapper">
+	<app-select-area></app-select-area>
+</div>
 
 

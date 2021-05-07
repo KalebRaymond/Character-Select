@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FighterIconComponent } from "../fighter-icon/fighter-icon.component";
 import { Fighter } from "../fighter";
 
@@ -8,22 +8,14 @@ import { Fighter } from "../fighter";
   styleUrls: ['./icons.component.css']
 })
 export class IconsComponent implements OnInit {
-	
-	@Input("fighter_cast") fighter_cast: Fighter[];
-	@Input("franchise") franchise: string;
-	@Input("selected_fighter") selected_fighter: Fighter;
+	@Input() fighter_cast: Fighter[];
+	@Input() franchise: string;
+	@Output() selection_event = new EventEmitter<Fighter>();
 
+	
 	constructor() { }
 
-	ngOnInit(): void
-	{
-		/*  
-		  this.selected_fighter = {
-			  id: -1,
-			  name: "test,
-		  }
-		*/
-	}
+	ngOnInit(): void { }
 
 	onHover(fighter): void
 	{
@@ -32,7 +24,8 @@ export class IconsComponent implements OnInit {
 
 	onClick(fighter): void
 	{
-		this.selected_fighter = fighter;
+		//Send the selected fighter to the select-area component to update the fighter-preview
+		this.selection_event.emit(fighter);
 		console.log(fighter.name);
 	}
 }
