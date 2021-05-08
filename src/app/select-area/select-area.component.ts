@@ -15,7 +15,8 @@ export class SelectAreaComponent implements OnInit {
 	capcom = "capcom";
 	
 	player_fighter = MARVEL_CAST[0];
-	cpu_fighter = CAPCOM_CAST[18]; //Morrigan
+	//cpu_fighter = CAPCOM_CAST[18]; //Morrigan
+	cpu_fighter = MARVEL_CAST[10]; //Juggernaut
 	
 	random_icon = {
 		id: -1,
