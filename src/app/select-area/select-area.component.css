@@ -4,7 +4,6 @@ div.container
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background-image: linear-gradient(to right, red, red, blue, blue);
 }	
 
 div.preview

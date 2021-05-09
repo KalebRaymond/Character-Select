@@ -1,11 +1,12 @@
 img
 {
-	height: 58px;
-	width: 58px;
-	background-color: white;
+	height: 60px;
+	width: 60px;
+	image-rendering: crisp-edges;
 	cursor: pointer;
-	border: 3px solid black;
+	border: 1px solid yellow;
 	margin-top: 3px;
 	margin-right: 3px;
 	float: left;
+	background: linear-gradient(to right, #ffd9d9, #ffd9d9, #f27272, #7272f2, #d9d9ff, #d9d9ff) no-repeat fixed;
 }

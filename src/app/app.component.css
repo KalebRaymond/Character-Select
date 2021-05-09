@@ -1,3 +1,25 @@
+p.bgText
+{
+	position: absolute;
+	font-family:'Geneva', sans-serif;
+	font-weight: 1000;
+    font-size: 200px;
+	overflow: hidden;
+	
+	animation-name: bgScroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgScroll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 div.taskbarWrapper
 {
 	width: auto;
